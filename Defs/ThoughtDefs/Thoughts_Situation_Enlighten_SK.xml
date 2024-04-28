@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>Enlighten_Environment_Bright_Kristal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Enlighten_Bright_Kristal</hediff>
+		<nullifyingTraits>
+			<li>NightOwl</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Слишком яркий свет</label>
+				<description>Мои глаза болят.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+	</ThoughtDef>
+
+	
+
+</Defs>

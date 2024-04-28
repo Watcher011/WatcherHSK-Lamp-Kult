@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--======================================WallLights======================================-->
+<!--
+<ThingDef ParentName="SK_LampBase">
+		<defName>KristalWallLamp</defName>
+		<label>Настенная лампа из светокамня</label>
+		<description>Настенная лампа из светокамня,дорого богато.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Lights/WallKristal</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.0,2.0)</drawSize>
+			<drawRotated>true</drawRotated>
+			<allowFlip>true</allowFlip>
+		</graphicData>
+		<uiIconPath>Things/Building/Furniture/Lights/WallKristal_ui</uiIconPath>
+		<altitudeLayer>PawnUnused</altitudeLayer>
+		<fillPercent>0.15</fillPercent>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<WorkToBuild>80</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Bulk>4</Bulk>
+			<Mass>2</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+			<li>Precious</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<costList>
+			<Glowstone>20</Glowstone>
+		</costList>
+		<surfaceType>Item</surfaceType>
+		<placeWorkers>
+			<li>SK.PlaceWorker_NotOnWall</li>
+			<li>SK.PlaceWorker_WallAttachment</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<building>
+			<uninstallWork>150</uninstallWork>
+			<isEdifice>false</isEdifice>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<comps>
+			
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(200,200,240,0)</glowColor>
+			</li>
+			<li Class="SK.CompProperties_RestrictedPlacement">
+				<compClass>SK.CompRestrictedPlacement</compClass>
+			</li>
+		</comps>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="SK_LampBase">
+		<defName>CeilingKristal</defName>
+		<label>Кристальная лампа</label>
+		<thingClass>SK.Building_Lamp</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Lights/CeilingKristal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.2, 0.2)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<uiIconPath>Things/Building/Furniture/Lights/CeilingKristal</uiIconPath>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>35</MaxHitPoints>
+			<WorkToBuild>320</WorkToBuild>
+			<Beauty>10</Beauty>
+			<Bulk>8</Bulk>
+			<Mass>2</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<description>Потолочная кристальная лампа.</description>
+		<costList>
+			<Glass>5</Glass>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Glowstone>10</Glowstone>
+		</costList>
+		<building>
+			<uninstallWork>800</uninstallWork>
+			<isEdifice>false</isEdifice>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<comps>
+			
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(200,200,240,0)</glowColor>
+				</li>
+			<li Class="SK.CompProperties_RestrictedPlacement">
+				<compClass>SK.CompRestrictedPlacement</compClass>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>SK.PlaceWorker_OnlyUnderRoof</li>
+		</placeWorkers>
+		<filthLeaving>Filth_BrokenGlass</filthLeaving>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	
+	
+	
+	Солнечная лампа на кристалах , удалена так как нет необходимости
+  <ThingDef ParentName="BuildingBase">
+    <defName>SunLampKristal</defName>
+    <label>Солнечный кристалл</label>
+    <description>Кристалл что испускает яркий свет.Излучение что способствует быстрому росту растиний ,однако имеет негативное влияние на зрение существ</description>
+  <thingClass>Building_SunLamp</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Lights/SunKrist</texPath>
+	 	<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+	     <drawSize>1.7,2</drawSize>
+    </graphicData>
+	<uiIconPath>Things/Building/Furniture/Lights/SunKrist</uiIconPath>
+    <blockWind>true</blockWind>
+    <statBases>
+      <WorkToBuild>330</WorkToBuild>
+      <Mass>20.5</Mass>
+    </statBases>
+	<size>(1,2)</size>
+	<stuffCategories>
+			<li>Metallic</li>
+			<li>Precious</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+    <costList>
+	    <Glass>5</Glass>
+	    <ComponentIndustrial>2</ComponentIndustrial>
+	    <Glowstone>30</Glowstone>
+    </costList>
+		<tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>10.0</overlightRadius>
+        <glowRadius>10</glowRadius>
+        <glowColor>(370,370,370,1.1)</glowColor>
+      </li>
+	   <li Class="CompProperties_Schedule">
+       
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Охлаждение светового кристалла</offMessage>
+      </li>
+       <li Class="SK.CompProperties_ApplyHediffAround">
+				<hediff>KristalBlindness</hediff>
+				<radius>7</radius>
+				<severityToAdd>0.005</severityToAdd>
+		</li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>3</heatPerSecond>
+      </li>
+    </comps>
+	<building>
+	         <isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<uninstallWork>150</uninstallWork>
+			<isEdifice>false</isEdifice>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+	</building>
+	<designationCategory>Misc</designationCategory>
+ 
+    <specialDisplayRadius>10</specialDisplayRadius>
+  </ThingDef>
+	
+	
+	-->
+	
+	
+	
+	
+	
+</Defs>

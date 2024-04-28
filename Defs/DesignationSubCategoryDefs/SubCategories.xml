@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Lights</defName>
+		<label>fueled lights</label>
+		<description>Fueled lights that need fuel for work.</description>
+		<defNames>
+			<li>TorchLamp</li>
+			<li>BowlLamp</li>
+			<li>WallTorch</li>
+			<li>Candle</li>
+			<li>GlowstoneLamp</li>
+			<li>KristalWallLamp</li>
+			<li>CeilingKristal</li>
+			<li>OutdoorGroundLamp</li>
+			<li>Lighting_PathLamp</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+
+</Defs>
+
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <SK.Enlighten.Def>
+        <defName>BrightKristal</defName>
+        <hediff>Enlighten_Bright_Kristal</hediff>
+        <glowMin>0.99</glowMin>
+        <glowMax>1.0</glowMax>
+    </SK.Enlighten.Def>
+	
+     <SK.Enlighten.Def>
+        <defName>Bright</defName>
+        <hediff>Enlighten_Bright</hediff>
+        <glowMin>0.8</glowMin>
+        <glowMax>0.9</glowMax>
+    </SK.Enlighten.Def>
+   
+    
+</Defs>
+    

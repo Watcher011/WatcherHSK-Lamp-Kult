@@ -1,0 +1,23 @@
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<!-- Production specialist patches -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PreceptDef[defName="IdeoBuilding"]/buildingDefChances</xpath>
+				<value>
+				  <GreenyArtKristal>1</GreenyArtKristal>
+	              <KatArt>1</KatArt>
+	              <WatcherArt>1</WatcherArt>
+	              <DragonsArt>1</DragonsArt>
+	              <CtulhuArt>1</CtulhuArt>
+	              <FoxArt>1</FoxArt>
+	              <GreenyArtFl>1</GreenyArtFl>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
+
